@@ -1,0 +1,22 @@
+        LOADL       8                   
+        CALL        #0_fac              
+        CALL        putint              
+        HALT                            
+#0_fac:
+        LOAD        [LB - 1]            
+        LOADL       1                   
+        GTR                             
+        NOT                             
+        JUMPIFNZ    #1                  
+#1:
+        LOADL       1                   
+        JUMP        #3                  
+#2:
+        LOAD        [LB - 1]            
+        LOAD        [LB - 1]            
+        LOADL       1                   
+        SUB                             
+        CALL        #0_fac              
+        MUL                             
+#3:
+        RETURN      1 1                 

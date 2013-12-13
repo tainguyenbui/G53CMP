@@ -1,0 +1,26 @@
+        LOADL       0                   
+        JUMPIFZ     lblElseIf           
+        LOADL       1                   
+        CALL        putint              
+        JUMP        #0                  
+#1:
+        LOADL       4                   
+        LOADL       5                   
+        GTR                             
+        JUMPIFZ     #2                  
+        LOADL       2                   
+        CALL        putint              
+        JUMP        #0                  
+#2:
+        LOADLB      7 2                 
+        EQL                             
+        JUMPIFZ     #3                  
+        LOADL       3                   
+        CALL        putint              
+        JUMP        #0                  
+#3:
+        LOADL       4                   
+        CALL        putint              
+        JUMP        #0                  
+#0:
+        HALT                            

@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>PPUtilities</title><link href="ocean.css" rel="stylesheet" type="text/css" title="Ocean" /><script src="haddock-util.js" type="text/javascript"></script><script type="text/javascript">//<![CDATA[
+window.onload = function () {pageLoad();setSynopsis("mini_PPUtilities.html");};
+//]]>
+</script></head><body><div id="package-header"><ul class="links" id="page-menu"><li><a href="index.html">Contents</a></li><li><a href="doc-index.html">Index</a></li></ul><p class="caption">HMTC</p></div><div id="content"><div id="module-header"><table class="info"><tr><th>Safe Haskell</th><td>Safe-Infered</td></tr></table><p class="caption">PPUtilities</p></div><div id="description"><p class="caption">Description</p><div class="doc"><p>Pretty-printing utilities.
+</p></div></div><div id="synopsis"><p id="control.syn" class="caption expander" onclick="toggleSection('syn')">Synopsis</p><ul id="section.syn" class="hide" onclick="toggleSection('syn')"><li class="src short"><a href="#v:ppName">ppName</a> :: <a href="Name.html#t:Name">Name</a> -&gt; ShowS</li><li class="src short"><a href="#v:ppSrcPos">ppSrcPos</a> :: <a href="SrcPos.html#t:SrcPos">SrcPos</a> -&gt; ShowS</li><li class="src short"><a href="#v:ppOpt">ppOpt</a> ::  Int -&gt; (Int -&gt; a -&gt; ShowS) -&gt; Maybe a -&gt; ShowS</li><li class="src short"><a href="#v:ppSeq">ppSeq</a> ::  Int -&gt; (Int -&gt; a -&gt; ShowS) -&gt; [a] -&gt; ShowS</li><li class="src short"><a href="#v:indent">indent</a> :: Int -&gt; ShowS</li><li class="src short"><a href="#v:nl">nl</a> :: ShowS</li><li class="src short"><a href="#v:spc">spc</a> :: ShowS</li><li class="src short"><a href="#v:spcs">spcs</a> :: Int -&gt; ShowS</li><li class="src short"><a href="#v:leftJust">leftJust</a> :: Int -&gt; String -&gt; ShowS</li><li class="src short"><a href="#v:rightJust">rightJust</a> :: Int -&gt; String -&gt; ShowS</li></ul></div><div id="interface"><h1>Documentation</h1><div class="top"><p class="src"><a name="v:ppName" class="def">ppName</a> :: <a href="Name.html#t:Name">Name</a> -&gt; ShowS</p><div class="doc"><p>Pretty-prints a name.
+</p></div></div><div class="top"><p class="src"><a name="v:ppSrcPos" class="def">ppSrcPos</a> :: <a href="SrcPos.html#t:SrcPos">SrcPos</a> -&gt; ShowS</p><div class="doc"><p>Pretty-prints a source code position.
+</p></div></div><div class="top"><p class="src"><a name="v:ppOpt" class="def">ppOpt</a> ::  Int -&gt; (Int -&gt; a -&gt; ShowS) -&gt; Maybe a -&gt; ShowS</p><div class="doc"><p>Pretty-prints an optional item. Arguments:
+</p><ol><li> Indentation level.
+</li><li> Pretty-printing function for the item.
+</li><li> The optional item to print.
+</li></ol></div></div><div class="top"><p class="src"><a name="v:ppSeq" class="def">ppSeq</a> ::  Int -&gt; (Int -&gt; a -&gt; ShowS) -&gt; [a] -&gt; ShowS</p><div class="doc"><p>Pretty-prints a sequence of items. Arguments:
+</p><ol><li> Indentation level.
+</li><li> Pretty-printing function for each item.
+</li><li> Sequence of items to print.
+</li></ol></div></div><div class="top"><p class="src"><a name="v:indent" class="def">indent</a> :: Int -&gt; ShowS</p><div class="doc"><p>Indent to specified level by printing spaces.
+</p></div></div><div class="top"><p class="src"><a name="v:nl" class="def">nl</a> :: ShowS</p><div class="doc"><p>Start a new line.
+</p></div></div><div class="top"><p class="src"><a name="v:spc" class="def">spc</a> :: ShowS</p><div class="doc"><p>Print a space.
+</p></div></div><div class="top"><p class="src"><a name="v:spcs" class="def">spcs</a> :: Int -&gt; ShowS</p><div class="doc"><p>Print n spaces.
+</p></div></div><div class="top"><p class="src"><a name="v:leftJust" class="def">leftJust</a> :: Int -&gt; String -&gt; ShowS</p><div class="doc"><p>Left justify in field of width n
+</p></div></div><div class="top"><p class="src"><a name="v:rightJust" class="def">rightJust</a> :: Int -&gt; String -&gt; ShowS</p><div class="doc"><p>Right justify in field of width n
+</p></div></div></div></div><div id="footer"><p>Produced by <a href="http://www.haskell.org/haddock/">Haddock</a> version 2.11.0</p></div></body></html>

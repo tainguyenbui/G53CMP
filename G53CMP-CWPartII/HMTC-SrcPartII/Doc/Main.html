@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Main</title><link href="ocean.css" rel="stylesheet" type="text/css" title="Ocean" /><script src="haddock-util.js" type="text/javascript"></script><script type="text/javascript">//<![CDATA[
+window.onload = function () {pageLoad();setSynopsis("mini_Main.html");};
+//]]>
+</script></head><body><div id="package-header"><ul class="links" id="page-menu"><li><a href="index.html">Contents</a></li><li><a href="doc-index.html">Index</a></li></ul><p class="caption">HMTC</p></div><div id="content"><div id="module-header"><table class="info"><tr><th>Safe Haskell</th><td>None</td></tr></table><p class="caption">Main</p></div><div id="description"><p class="caption">Description</p><div class="doc"><p>Main MiniTriangle compiler driver.
+</p></div></div><div id="synopsis"><p id="control.syn" class="caption expander" onclick="toggleSection('syn')">Synopsis</p><ul id="section.syn" class="hide" onclick="toggleSection('syn')"><li class="src short"><a href="#v:main">main</a> :: IO ()</li></ul></div><div id="interface"><h1>Documentation</h1><div class="top"><p class="src"><a name="v:main" class="def">main</a> :: IO ()</p><div class="doc"><p>Usage (command line):
+</p><dl><dt>hmtc [options] file.mt</dt><dd>	Compile &quot;file.mt&quot;
+</dd><dt>hmtc [options]</dt><dd>		Read program to compile from standard
+                     		        input. (Could be confusing!)
+</dd></dl><p>Options:
+</p><dl><dt>--help</dt><dd>			Print help message and stop.
+</dd><dt>--stop-after-parsing</dt><dd>		Stop after parsing.
+					Implies &quot;--print-after-parsing&quot;.
+</dd><dt>--print-after-parsing</dt><dd>		Print intermediate representation after
+					parsing.
+</dd><dt>--stop-after-checking</dt><dd>		Stop after type checking.
+					Implies	&quot;--print-after-checking&quot;.
+</dd><dt>--print-after-checking</dt><dd>	Print intermediate representation after
+					type checking.
+</dd><dt>--stop-after-codegen</dt><dd>		Stop after code generation.
+					Implies &quot;--print-after-codegen&quot;.
+</dd><dt>--print-after-codegen</dt><dd>		Print generated TAM code.
+</dd><dt>--peepopt</dt><dd>			Do peephole optimization on the
+					generated TAM code.
+</dd><dt>--no-peepopt</dt><dd>			Do not do peephole optimization on the
+					generated TAM code.
+</dd><dt>--run</dt><dd>				Interpret generated TAM code.
+</dd><dt>--run-traced</dt><dd>			Interpret generated TAM code and trace
+					the execution.
+</dd><dt>--version</dt><dd>			Print HMTC version and stop.
+</dd></dl></div></div></div></div><div id="footer"><p>Produced by <a href="http://www.haskell.org/haddock/">Haddock</a> version 2.11.0</p></div></body></html>

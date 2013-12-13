@@ -1,0 +1,39 @@
+        LOADLB      0 2                 
+        LOADL       70                  
+        CALL        putchar             
+        LOADL       114                 
+        CALL        putchar             
+        LOADL       111                 
+        CALL        putchar             
+        LOADL       109                 
+        CALL        putchar             
+        LOADL       63                  
+        CALL        putchar             
+        LOADL       10                  
+        CALL        putchar             
+        LOADA       [SB + 0]            
+        CALL        getint              
+        LOADL       84                  
+        CALL        putchar             
+        LOADL       111                 
+        CALL        putchar             
+        LOADL       63                  
+        CALL        putchar             
+        LOADL       10                  
+        CALL        putchar             
+        LOADA       [SB + 1]            
+        CALL        getint              
+#0:
+        LOAD        [SB + 0]            
+        CALL        putint              
+        LOAD        [SB + 0]            
+        LOADL       1                   
+        ADD                             
+        STORE       [SB + 0]            
+#1:
+        LOAD        [SB + 0]            
+        LOAD        [SB + 1]            
+        GTR                             
+        JUMPIFNZ    #0                  
+        POP         0 2                 
+        HALT                            

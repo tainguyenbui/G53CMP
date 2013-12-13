@@ -1,0 +1,8 @@
+begin
+if x < 10 then
+   y := 1
+elseif x < 15 then
+   y := 3
+else
+   y := 0
+end
